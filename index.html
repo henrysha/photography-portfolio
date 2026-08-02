@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Henry Ha • Photographer & Visual Artist</title>
+  <meta name="description" content="Official photography portfolio of Seong Wook Ha (Henry). Specializing in concert & event photography, portraits, weddings, travel, and candid street works based in New York City.">
+  <link rel="stylesheet" href="./src/styles.css">
+</head>
+<body>
+
+  <!-- Ambient Glow Elements -->
+  <div class="stage-light-glow stage-light-1"></div>
+  <div class="stage-light-glow stage-light-2"></div>
+  <div class="stage-light-glow stage-light-3"></div>
+
+  <!-- Header Navigation -->
+  <header>
+    <div class="container nav-container">
+      <a href="#home" class="logo">
+        HENRY HA<span class="logo-dot"></span>
+      </a>
+
+      <!-- Hamburger Menu for Mobile -->
+      <button class="mobile-nav-toggle" id="mobile-nav-toggle" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <!-- Nav Links -->
+      <ul class="nav-links">
+        <li><a href="#home" class="active">Home</a></li>
+        <li><a href="#work">Work</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="hero-bg" id="hero-bg"></div>
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <div class="hero-tagline">Concerts • Portraits • Weddings • Travel • Candid</div>
+      <h1>Seong Wook <span class="text-gradient">Henry</span> Ha</h1>
+      <p class="hero-description">
+        Capturing raw energy, authentic emotion, and unscripted beauty—from high-voltage concert stages to intimate portraits, weddings, travel, and candid street scenes.
+      </p>
+      <div class="hero-cta">
+        <a href="#work" class="btn btn-primary">Explore Work</a>
+        <a href="#contact" class="btn btn-secondary">Book a Session</a>
+      </div>
+    </div>
+
+    <!-- Scroll Indicator -->
+    <a href="#work" class="scroll-indicator" aria-label="Scroll to portfolio">
+      <span>Scroll</span>
+      <div class="scroll-mouse">
+        <div class="scroll-wheel"></div>
+      </div>
+    </a>
+  </section>
+
+  <!-- Work (Portfolio Grid) Section -->
+  <section id="work" class="portfolio-section">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Selected Works</h2>
+      </div>
+
+      <!-- Filter Buttons Bar -->
+      <div class="filter-container">
+        <button class="filter-btn active" data-filter="all">All Works</button>
+        <button class="filter-btn" data-filter="concert">Concert & Event</button>
+        <button class="filter-btn" data-filter="portrait">Portraits</button>
+        <button class="filter-btn" data-filter="wedding">Weddings</button>
+        <button class="filter-btn" data-filter="travel">Travel</button>
+        <button class="filter-btn" data-filter="candid">Candid & Street</button>
+      </div>
+
+      <!-- Masonry Grid -->
+      <div id="gallery-grid" class="gallery-grid">
+        <!-- Rendered dynamically by app.js -->
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="about-section">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-image-wrapper">
+          <img src="./images/profile/L 65.jpg" alt="Henry Ha - Portrait" class="about-image">
+        </div>
+        <div class="about-content">
+          <span class="section-subtitle" style="text-align: left;">Behind the Lens</span>
+          <h3>Meet Seong Wook Ha</h3>
+          <div class="about-bio">
+            <p>
+              Hi, I'm Seong Wook Ha, though most folks in the industry and behind the camera know me as <strong>Henry</strong>. I am an NYC-based photographer dedicated to capturing authentic moments, dynamic lighting, and unscripted human emotion.
+            </p>
+            <p>
+              My work spans live music concerts, artist portraits, wedding celebrations, travel photography, and candid street scenes. Whether I'm standing in a packed venue photo pit, directing an intimate portrait session, or capturing breathtaking travel landscapes, my philosophy remains constant: photograph the <em>feeling</em>, not just the subject.
+            </p>
+            <p>
+              Equipped with high-performance full-frame and medium-format gear, I bring technical precision and artistic intuition to every shoot—creating timeless images that resonate.
+            </p>
+          </div>
+          
+          <div class="about-details">
+            <div class="detail-block">
+              <h4>Gear Bag</h4>
+              <ul>
+                <li>Sony α7 III (A7M3)</li>
+                <li>Fujifilm GFX100RF</li>
+                <li>Ricoh GR IIIx</li>
+                <li>Tamron 28-200mm F/2.8-5.6</li>
+                <li>Samyang 85mm F/1.4</li>
+                <li>Sony FE 40mm F/2.5 G</li>
+              </ul>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact-section">
+    <div class="container">
+      <div class="contact-grid">
+        <div class="contact-info">
+          <span class="section-subtitle" style="text-align: left;">Booking & Inquiries</span>
+          <h3>Let's Create Together</h3>
+          <p class="contact-lead">
+            Available for concert coverage, editorial portrait sessions, wedding bookings, and custom photography projects worldwide.
+          </p>
+
+          <div class="contact-channels">
+            <a href="mailto:henry.seongwook.ha@gmail.com" class="channel-item">
+              <div class="channel-icon">
+                <!-- SVG Envelope -->
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+              </div>
+              <div class="channel-details">
+                <span>Email Direct</span>
+                <p>henry.seongwook.ha@gmail.com</p>
+              </div>
+            </a>
+            
+            <a href="https://instagram.com/henry_pic_u" target="_blank" rel="noopener noreferrer" class="channel-item">
+              <div class="channel-icon">
+                <!-- SVG Instagram -->
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+              </div>
+              <div class="channel-details">
+                <span>Instagram</span>
+                <p>@henry_pic_u</p>
+              </div>
+            </a>
+
+            <div class="channel-item">
+              <div class="channel-icon">
+                <!-- SVG Map Pin -->
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+              </div>
+              <div class="channel-details">
+                <span>Based In</span>
+                <p>New York City (Available Globally)</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Contact Form -->
+        <div class="contact-form-container">
+          <form id="contact-form" action="https://formsubmit.co/henry.seongwook.ha@gmail.com" method="POST" novalidate>
+            <div class="form-group">
+              <label for="form-name" class="form-label">Your Name</label>
+              <input type="text" id="form-name" class="form-input" placeholder="John Doe" required>
+            </div>
+            
+            <div class="form-group">
+              <label for="form-email" class="form-label">Email Address</label>
+              <input type="email" id="form-email" class="form-input" placeholder="john.doe@gmail.com" required>
+            </div>
+
+            <div class="form-group">
+              <label for="form-subject" class="form-label">What kind of project are we planning?</label>
+              <input type="text" id="form-subject" class="form-input" placeholder="Concert / Event, Portrait Session, Wedding, Travel, Candid Shoot..." required>
+            </div>
+
+            <div class="form-group">
+              <label for="form-message" class="form-label">Tell me about your project</label>
+              <textarea id="form-message" class="form-input" placeholder="Dates, location, vision, budget, and any inspiration..." required></textarea>
+            </div>
+
+            <button type="submit" class="submit-btn">Send Booking Inquiry</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer Section -->
+  <footer>
+    <div class="container footer-container">
+      <div class="footer-copyright">
+        &copy; <span id="footer-year">2026</span> Seong Wook Ha (Henry). All rights reserved. Built with passion for photography.
+      </div>
+      <div class="footer-socials">
+        <a href="https://instagram.com/henry_pic_u" target="_blank" rel="noopener noreferrer" class="footer-social-link">Instagram</a>
+        <a href="mailto:henry.seongwook.ha@gmail.com" class="footer-social-link">Email</a>
+      </div>
+      <button id="back-to-top" class="back-to-top" aria-label="Back to Top">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="19" x2="12" y2="5"></line><polyline points="5,12 12,5 19,12"></polyline></svg>
+      </button>
+    </div>
+  </footer>
+
+  <!-- Lightbox Modal -->
+  <div id="lightbox" class="lightbox">
+    <!-- Close Button -->
+    <button id="lightbox-close" class="lightbox-btn lightbox-close" aria-label="Close image">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+    </button>
+    
+    <!-- Prev Button -->
+    <button id="lightbox-prev" class="lightbox-btn lightbox-prev" aria-label="Previous image">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="15,18 9,12 15,6"></polyline></svg>
+    </button>
+    
+    <!-- Next Button -->
+    <button id="lightbox-next" class="lightbox-btn lightbox-next" aria-label="Next image">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9,18 15,12 9,6"></polyline></svg>
+    </button>
+
+    <div class="lightbox-content">
+      <div class="lightbox-main">
+        <div class="lightbox-img-wrapper">
+          <img id="lightbox-image" class="lightbox-image" src="" alt="">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Load main script -->
+  <script type="module" src="./src/app.js"></script>
+  <script>
+    // Set dynamic current year in footer
+    document.getElementById('footer-year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
