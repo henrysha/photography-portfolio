@@ -190,5 +190,13 @@ export const photos = [
     category: "concert",
     width: 2304,
     height: 1536
+  },
+  {
+    id: "photo-25",
+    filename: "images/concert/IMG_1835.jpg",
+    aspect: "landscape",
+    category: "concert",
+    width: 2304,
+    height: 1541
   }
 ];
