@@ -150,5 +150,45 @@ export const photos = [
     category: "concert",
     width: 1203,
     height: 1805
+  },
+  {
+    id: "photo-20",
+    filename: "images/concert/DSC00056.jpg",
+    aspect: "landscape",
+    category: "concert",
+    width: 2304,
+    height: 1536
+  },
+  {
+    id: "photo-21",
+    filename: "images/concert/DSC00059.jpg",
+    aspect: "landscape",
+    category: "concert",
+    width: 2304,
+    height: 1536
+  },
+  {
+    id: "photo-22",
+    filename: "images/concert/DSC00078.jpg",
+    aspect: "landscape",
+    category: "concert",
+    width: 2304,
+    height: 1536
+  },
+  {
+    id: "photo-23",
+    filename: "images/concert/DSC00184.jpg",
+    aspect: "landscape",
+    category: "concert",
+    width: 2304,
+    height: 1536
+  },
+  {
+    id: "photo-24",
+    filename: "images/concert/DSC06720.JPG",
+    aspect: "landscape",
+    category: "concert",
+    width: 2304,
+    height: 1536
   }
 ];
