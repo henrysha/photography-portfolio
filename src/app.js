@@ -279,8 +279,8 @@ function setupContactForm() {
     submitBtn.disabled = true;
 
     try {
-      // Dispatch email payload via FormSubmit API to henry.seongwook.ha@gmail.com
-      const response = await fetch('https://formsubmit.co/ajax/henry.seongwook.ha@gmail.com', {
+      // Dispatch email payload via FormSubmit API to obfuscated endpoint
+      const response = await fetch('https://formsubmit.co/ajax/d113ed61e034ed32e4a6d87561df9c97', {
         method: 'POST',
         headers: { 
           'Content-Type': 'application/json',
@@ -299,7 +299,7 @@ function setupContactForm() {
         submitBtn.textContent = 'Message Sent ✓';
         submitBtn.style.background = 'linear-gradient(135deg, #00f0ff 0%, #00ff66 100%)';
         submitBtn.style.boxShadow = '0 8px 32px 0 rgba(0, 240, 255, 0.3)';
-        showToastAlert(`Thank you ${name}! Your inquiry was sent to Henry (${email}).`);
+        showToastAlert(`Thank you ${name}! Your inquiry has been sent. I will get back to you at ${email} shortly.`);
       } else {
         // Fallback to mailto if service is unavailable
         window.location.href = `mailto:henry.seongwook.ha@gmail.com?subject=${encodeURIComponent(subject || 'Booking Inquiry')}&body=${encodeURIComponent(`Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`)}`;
